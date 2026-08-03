@@ -1,5 +1,3 @@
-<div align="center" style="background-color:#F8BBD9; padding:15px; border-radius:8px;">
-
 # <span style="color:#1F3A5F;">Product Reliability and RMA Analytics</span>
 
 </div>
@@ -15,13 +13,15 @@ Analyzed field quality RMA data to assess product reliability, compare manufactu
 ## 2. Dashboard Overview
 
 <p align="center">
-  <img src="Project 1_dashboard.png" width="100%">
+  <img width="1992" height="458" alt="image" src="https://github.com/user-attachments/assets/4b825fbe-63bb-492e-9ef7-7dde989b512a" /><div align="center" style="background-color:#F8BBD9; padding:15px; border-radius:8px;">
 </p>
 
 ---
 
 ## 3. Business Questions
 
+<div align="left">
+  
 - What is the overall Return Material Authorization (RMA) rate in the field?
 - Which manufacturing cohorts (based on production period) have the highest and lowest RMA rates?
 - When do RMAs occur most frequently by month and work week?
@@ -30,6 +30,7 @@ Analyzed field quality RMA data to assess product reliability, compare manufactu
 - How do cumulative RMA rates vary across aging intervals for each manufacturing cohort?
 - Which product categories contribute the most failures?
 - What are the most common failure modes reported by customers?
+</div>
 
 ## 4. Data Preparation
 
@@ -46,6 +47,8 @@ Analyzed field quality RMA data to assess product reliability, compare manufactu
 
 ## 5. Data Validation
 
+<div align="left">
+  
 **Objective:** Verify that the total number of RMA records in the dashboard matches the cleaned dataset.
 
 **Validation:** Compared the total RMA count from the cleaned Power Query output with the Pivot Table summary and dashboard KPI.
@@ -58,3 +61,17 @@ Analyzed field quality RMA data to assess product reliability, compare manufactu
 2. Verify dashboard result (**38 RMAs**).
 3. Apply the same filters to the source dataset.
 4. Confirm source record count = **38**.
+</div>
+
+## 6. Dashboard & Analysis
+
+| Chart | Question | Focus |
+|---|---|------|
+| **Field Quality RMA Rate** | What is the overall Return Material Authorization (RMA) rate in the field? | Overall field quality performance. |
+| **Manufacturing Cohort RMA Rate** | Which manufacturing cohorts (based on production period) have the highest and lowest RMA rates? | Compare product quality across manufacturing periods. |
+| **Month and Work Week Distribution of RMA's** | When do RMAs occur most frequently by month and work week? | Identify temporal patterns and recurring peaks in RMAs. |
+| **Cumulative Quarterly Performance Per Manufacturing Cohort (Accumulated RMA Count over Actual Delivered Units)** | How does each manufacturing cohort's cumulative RMA rate change over successive quarters? | Emphasizes the trend over time for each quarterly cohort. |
+| **Cumulative Manufacturing Cohort Heatmap** | Which manufacturing cohorts and time periods exhibit the highest cumulative RMA rates? | Quickly identify high-risk manufacturing periods. |
+| **Cumulative RMA Failure Rate by Manufacturing Cohort and Aging Interval** | How do failure rates evolve as products age for each manufacturing cohort? | Emphasizes which aging intervals contribute the most to cumulative failures. |
+| **Top 10 Failure Categories by Total Failures** | Which product categories contribute the most failures? | Highlights the modules or systems (e.g., Kneader, Press, Vertical Tray, Connectivity) responsible for the largest share of RMAs, helping prioritize reliability improvement efforts and engineering resources. |
+| **Top 10 Failure Modes by Total Failures** | What are the most common failure modes reported by customers? | Identifies the specific defects causing the highest number of failures, enabling targeted root cause investigations, corrective actions, and design improvements. |
