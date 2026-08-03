@@ -280,3 +280,276 @@ alt="Data Preparation">
 </body>
 
 </html>
+<!-- ==========================================
+     5. DATA VALIDATION
+========================================== -->
+
+<section id="data-validation">
+
+    <h2>5. Data Validation</h2>
+
+    <p>
+        <strong>Objective:</strong>
+        Verify that the total number of RMA records in the dashboard
+        matches the filtered source dataset.
+    </p>
+
+    <p>
+        <strong>Validation:</strong>
+        Compare the total RMA count shown in the Pivot Chart against
+        the filtered records from the source data.
+    </p>
+
+    <p>
+        <strong>Result:</strong>
+        All totals matched, confirming that no records were lost or
+        duplicated during data preparation.
+    </p>
+
+    <h3>Steps</h3>
+
+    <ol class="validation-steps">
+        <li>Apply dashboard filters.</li>
+        <li>Verify the total number of RMA records shown in the dashboard.</li>
+        <li>Apply the same filters to the source dataset.</li>
+        <li>Confirm that the source record count matches the dashboard count.</li>
+    </ol>
+
+
+    <!-- Main validation image -->
+
+    <div class="image-box validation-main-image">
+        <img
+            src="images/data-validation-overview.png"
+            alt="Dashboard and source data validation overview"
+        >
+    </div>
+
+
+    <!-- Optional separate validation screenshots -->
+
+    <div class="validation-image-grid">
+
+        <div class="validation-image-item">
+            <img
+                src="images/validation-chart.png"
+                alt="Filtered dashboard chart"
+            >
+        </div>
+
+        <div class="validation-image-item">
+            <img
+                src="images/validation-filters.png"
+                alt="Dashboard filter selections"
+            >
+        </div>
+
+        <div class="validation-image-item">
+            <img
+                src="images/validation-source-records.png"
+                alt="Filtered source records"
+            >
+        </div>
+
+        <div class="validation-image-item">
+            <img
+                src="images/validation-record-count.png"
+                alt="Source data record count"
+            >
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     6. DASHBOARD AND ANALYSIS
+========================================== -->
+
+<section id="dashboard-analysis">
+
+    <h2>6. Dashboard &amp; Analysis</h2>
+
+    <table class="analysis-table">
+
+        <thead>
+
+            <tr>
+                <th>Chart</th>
+                <th>Question</th>
+                <th>Focus</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>
+                    Field Quality RMA Rate
+                </td>
+
+                <td>
+                    What is the overall Return Material Authorization
+                    (RMA) rate in the field?
+                </td>
+
+                <td>
+                    Overall field quality performance.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Manufacturing Cohort RMA Rate
+                </td>
+
+                <td>
+                    Which manufacturing cohorts have demonstrated the
+                    highest and lowest RMA rates?
+                </td>
+
+                <td>
+                    Compare product quality across manufacturing periods.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Month and Work Week Distribution of RMAs
+                </td>
+
+                <td>
+                    When do RMAs occur most frequently by month and
+                    work week?
+                </td>
+
+                <td>
+                    Identify temporal patterns and recurring peaks in
+                    customer returns.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Cumulative Quarterly Performance per Manufacturing
+                    Cohort
+                </td>
+
+                <td>
+                    How does each manufacturing cohort's cumulative RMA
+                    rate change over successive quarters?
+                </td>
+
+                <td>
+                    Evaluate the cumulative field performance of each
+                    manufacturing cohort.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Cumulative Manufacturing Cohort Heatmap
+                </td>
+
+                <td>
+                    Which manufacturing cohorts and time periods exhibit
+                    the highest cumulative RMA rates?
+                </td>
+
+                <td>
+                    Identify high-risk manufacturing periods using
+                    conditional-formatting intensity.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Cumulative RMA Rate per Manufacturing Cohort and
+                    Aging Interval
+                </td>
+
+                <td>
+                    How do failure rates evolve as products age for each
+                    manufacturing cohort?
+                </td>
+
+                <td>
+                    Evaluate product aging patterns and compare the
+                    cumulative reliability of manufacturing cohorts.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Top 10 Failure Categories by Total Failures
+                </td>
+
+                <td>
+                    Which product categories contribute the most failures?
+                </td>
+
+                <td>
+                    Highlight the product areas contributing the highest
+                    volume of RMA cases.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Top 10 Failure Modes by Total Failures
+                </td>
+
+                <td>
+                    What are the most common failure modes reported by
+                    customers?
+                </td>
+
+                <td>
+                    Identify recurring customer-reported issues and
+                    prioritize reliability-improvement opportunities.
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <!-- Dashboard analysis overview image -->
+
+    <div class="image-box dashboard-analysis-image">
+
+        <img
+            src="images/dashboard-analysis-overview.png"
+            alt="Product reliability and RMA dashboard analysis"
+        >
+
+    </div>
+
+</section>
