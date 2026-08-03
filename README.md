@@ -66,6 +66,10 @@ Analyzed field quality RMA data to assess product reliability, compare manufactu
 4. Confirm source record count = **38**.
 </div>
 
+<p align="center">
+  <img src="Graph/Data Validation.png" width="1000">
+</p>
+
 ---
 
 ## 6. Dashboard & Analysis
