@@ -13,7 +13,7 @@ Analyzed field quality RMA data to assess product reliability, compare manufactu
 ## 2. Dashboard Overview
 
 <p align="center">
-  <img width="1992" height="458" alt="image" src="https://github.com/user-attachments/assets/4b825fbe-63bb-492e-9ef7-7dde989b512a" /><div align="center" style="background-color:#F8BBD9; padding:15px; border-radius:8px;">
+  <img src="Graph/Dashboard.png" width="1000">
 </p>
 
 ---
@@ -87,14 +87,14 @@ Analyzed field quality RMA data to assess product reliability, compare manufactu
 
 | Question | Dashboard Visual | Conclusion |
 |----------|------------------|------------|
-| **What is the overall Return Material Authorization (RMA) rate in the field?** | *Insert Field Quality RMA Rate chart here* | The reported field RMA rate stabilized at approximately **1–3%** while active units in the field (cumulative deliveries minus previous RMAs) continued to increase, indicating improved product reliability as the installed base grew. |
-| **Which manufacturing cohorts (based on production period) have the highest and lowest RMA rates?** | *Insert Manufacturing Cohort RMA Rate chart here* | Manufacturing cohort RMA rates generally decreased across newer shipment cohorts, with a temporary increase in **January 2026**. RMA rates from **March 2026 onward** may be understated due to limited Customer Support (CS) operations, which reduced RMA reporting. |
-| **When do RMAs occur most frequently by month and work week?** | *Insert Month and Work Week Distribution chart here* | RMAs occurred most frequently between **June and December 2025**, with the highest volume recorded during **Work Week 51**, indicating that failures were concentrated in the latter half of 2025. |
-| **How does the cumulative RMA rate change as each quarterly manufacturing cohort ages?** | *Insert Quarterly Cohort Cumulative RMA chart here* | The cumulative RMA rate increased as each quarterly manufacturing cohort aged, although the rate of increase gradually slowed over time, indicating that failures accumulated as products remained longer in the field. |
-| **Which manufacturing cohorts and time periods exhibit the highest cumulative RMA rates?** | *Insert Cumulative Manufacturing Cohort Heatmap here* | The **May and June 2025** manufacturing cohorts exhibited the highest cumulative RMA rates, reaching approximately **15% by July 2026**. In general, cumulative RMA rates increased with field age, with older cohorts consistently showing higher values than newer cohorts. |
-| **How do cumulative RMA rates vary across aging intervals for each manufacturing cohort?** | *Insert Aging Interval Comparison chart here* | Cumulative RMA rates increased across successive aging intervals for all manufacturing cohorts. The highest cumulative failure rates were generally observed after **9–15 months** in the field, indicating that failures continued to accumulate as products aged. |
-| **Which product categories contribute the most failures?** | *Insert Top 10 Failure Categories chart here* | The **Kicker Module** contributed the largest number of failures, followed by **Electrical** and **Kneader** issues. These categories accounted for most RMAs, making them the highest-priority areas for product reliability improvement. |
-| **What are the most common failure modes reported by customers?** | *Insert Top 10 Failure Modes chart here* | **Not Powering On** and **Kicker Drive** were the most common failure modes, significantly exceeding all others. Prioritizing improvements in these failure modes would have the greatest impact on reducing overall RMA cases. |
+| **What is the overall Return Material Authorization (RMA) rate in the field?** | <img src="Graph/Field Quality RMA Graph.png" width="700"> | The reported field RMA rate stabilized at approximately **1–3%** while active units in the field (cumulative deliveries minus previous RMAs) continued to increase, indicating improved product reliability as the installed base grew. |
+| **Which manufacturing cohorts (based on production period) have the highest and lowest RMA rates?** | <img src="Graph/Manufacturing Cohort RMA Graph.png" width="700"> | Manufacturing cohort RMA rates generally decreased across newer shipment cohorts, with a temporary increase in **January 2026**. RMA rates from **March 2026 onward** may be understated due to limited Customer Support (CS) operations, which reduced RMA reporting. |
+| **When do RMAs occur most frequently by month and work week?** | <img src="Graph/Month and Work Week Distribution Dashboard.png" width="700"> | RMAs occurred most frequently between **June and December 2025**, with the highest volume recorded during **Work Week 51**, indicating that failures were concentrated in the latter half of 2025. |
+| **How does the cumulative RMA rate change as each quarterly manufacturing cohort ages?** | <img src="Graph/Cummulative Quarterly Performance Graph.png" width="700"> | The cumulative RMA rate increased as each quarterly manufacturing cohort aged, although the rate of increase gradually slowed over time, indicating that failures accumulated as products remained longer in the field. |
+| **Which manufacturing cohorts and time periods exhibit the highest cumulative RMA rates?** | <img src="Graph/Cumulative Manufacturing Cohort Graph.png" width="700"> | The **May and June 2025** manufacturing cohorts exhibited the highest cumulative RMA rates, reaching approximately **15% by July 2026**. In general, cumulative RMA rates increased with field age, with older cohorts consistently showing higher values than newer cohorts. |
+| **How do cumulative RMA rates vary across aging intervals for each manufacturing cohort?** | <img src="Graph/Cumulative RMA Failure Rate Graph.png"> | Cumulative RMA rates increased across successive aging intervals for all manufacturing cohorts. The highest cumulative failure rates were generally observed after **9–15 months** in the field, indicating that failures continued to accumulate as products aged. |
+| **Which product categories contribute the most failures?** | <img src="Graph/Top 10 Failure Categories Graph.png"> | The **Kicker Module** contributed the largest number of failures, followed by **Electrical** and **Kneader** issues. These categories accounted for most RMAs, making them the highest-priority areas for product reliability improvement. |
+| **What are the most common failure modes reported by customers?** | <img src="Graph/Top 10 Failure Modes Graph.png"> | **Not Powering On** and **Kicker Drive** were the most common failure modes, significantly exceeding all others. Prioritizing improvements in these failure modes would have the greatest impact on reducing overall RMA cases. |
 
 ---
 
@@ -104,7 +104,9 @@ Analyzed field quality RMA data to assess product reliability, compare manufactu
 
 **Dashboard Visual**
 
-*Insert Heatmap and Interactive Dashboard screenshots here*
+<p align="center">
+  <img src="Graph/Interactive Analysis_January 2026 Cohort RMA Increase.png" width="1000">
+</p>
 
 **Key Finding**
 
@@ -116,7 +118,9 @@ Cross-filtering revealed that the increase in cumulative RMA rates for the **Jan
 
 **Dashboard Visual**
 
-*Insert Work Week Distribution chart and Interactive Dashboard screenshots here*
+<p align="center">
+  <img src="Graph/Interactive Analysis_Week 51 RMA Spike.png" width="1000">
+</p>
 
 **Key Finding**
 
