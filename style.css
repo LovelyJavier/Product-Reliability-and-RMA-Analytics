@@ -161,3 +161,167 @@ li{
 margin-bottom:8px;
 
 }
+/* ==========================================
+   SECTION TEXT
+========================================== */
+
+section p {
+    font-size: 13px;
+    line-height: 1.45;
+    margin: 5px 0;
+}
+
+h3 {
+    color: #333333;
+    font-size: 14px;
+    margin: 14px 0 7px;
+}
+
+
+/* ==========================================
+   DATA VALIDATION
+========================================== */
+
+.validation-steps {
+    margin: 5px 0 15px 22px;
+    padding-left: 8px;
+}
+
+.validation-steps li {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 3px;
+}
+
+
+/* Main validation screenshot */
+
+.validation-main-image {
+    margin-top: 15px;
+}
+
+.validation-main-image img {
+    display: block;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    border: 1px solid #777777;
+}
+
+
+/* Separate validation screenshots */
+
+.validation-image-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 10px;
+    margin-top: 12px;
+    align-items: start;
+}
+
+.validation-image-item {
+    width: 100%;
+}
+
+.validation-image-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #777777;
+}
+
+
+/* ==========================================
+   DASHBOARD AND ANALYSIS TABLE
+========================================== */
+
+.analysis-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+.analysis-table th,
+.analysis-table td {
+    border: 1px solid #777777;
+    padding: 7px;
+    font-size: 12px;
+    line-height: 1.35;
+    vertical-align: top;
+}
+
+.analysis-table th {
+    background-color: #efc7e8;
+    color: #333333;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Column sizes */
+
+.analysis-table th:nth-child(1),
+.analysis-table td:nth-child(1) {
+    width: 29%;
+}
+
+.analysis-table th:nth-child(2),
+.analysis-table td:nth-child(2) {
+    width: 35%;
+}
+
+.analysis-table th:nth-child(3),
+.analysis-table td:nth-child(3) {
+    width: 36%;
+}
+
+
+/* Dashboard image below table */
+
+.dashboard-analysis-image {
+    margin-top: 18px;
+}
+
+.dashboard-analysis-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #777777;
+}
+
+
+/* ==========================================
+   RESPONSIVE LAYOUT
+========================================== */
+
+@media (max-width: 768px) {
+
+    .validation-image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .analysis-table {
+        table-layout: auto;
+    }
+
+    .analysis-table th,
+    .analysis-table td {
+        font-size: 11px;
+        padding: 5px;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    #dashboard-analysis {
+        overflow-x: auto;
+    }
+
+    .analysis-table {
+        min-width: 650px;
+    }
+
+}
