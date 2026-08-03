@@ -15,7 +15,7 @@ Analyzed field quality RMA data to assess product reliability, compare manufactu
 ## 2. Dashboard Overview
 
 <p align="center">
-  <img src="images/dashboard-overview.png" width="100%">
+  <img src="Project 1_dashboard.png" width="100%">
 </p>
 
 ---
