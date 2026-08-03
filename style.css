@@ -1,0 +1,163 @@
+/* =========================
+GLOBAL
+========================= */
+
+
+body{
+
+font-family: Arial, Helvetica, sans-serif;
+
+margin:40px;
+
+color:#333;
+
+background:white;
+
+}
+
+
+section{
+
+margin-bottom:35px;
+
+}
+
+
+
+
+/* =========================
+TITLE
+========================= */
+
+
+.title-bar{
+
+background:#9C2A8E;
+
+color:white;
+
+font-size:22px;
+
+font-weight:bold;
+
+text-align:center;
+
+padding:8px;
+
+margin-bottom:20px;
+
+}
+
+
+
+
+
+/* =========================
+HEADINGS
+========================= */
+
+
+h2{
+
+color:#1F4E79;
+
+font-size:18px;
+
+margin-bottom:10px;
+
+}
+
+
+
+
+
+/* =========================
+TABLE
+========================= */
+
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+font-size:13px;
+
+}
+
+
+
+th{
+
+background:#F8BBD9;
+
+color:#333;
+
+font-weight:bold;
+
+border:1px solid #999;
+
+padding:8px;
+
+text-align:center;
+
+}
+
+
+
+td{
+
+border:1px solid #999;
+
+padding:8px;
+
+vertical-align:top;
+
+}
+
+
+
+
+
+/* =========================
+IMAGE HOLDER
+========================= */
+
+
+.image-box{
+
+width:100%;
+
+text-align:center;
+
+margin:15px 0;
+
+}
+
+
+
+.image-box img{
+
+max-width:100%;
+
+height:auto;
+
+border:1px solid #999;
+
+}
+
+
+
+
+
+/* =========================
+LIST
+========================= */
+
+
+li{
+
+margin-bottom:8px;
+
+}
