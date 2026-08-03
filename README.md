@@ -32,6 +32,8 @@ Analyzed field quality RMA data to assess product reliability, compare manufactu
 - What are the most common failure modes reported by customers?
 </div>
 
+---
+
 ## 4. Data Preparation
 
 | **Step** | **Description** |
@@ -42,6 +44,7 @@ Analyzed field quality RMA data to assess product reliability, compare manufactu
 | **Data Standardization** | Developed custom **Spelling Correction** and **Failure Mapping** tables to correct spelling variations, standardize inconsistent issue descriptions, and classify failures into standardized failure modes, categories, and failure types. |
 | **Data Integration** | Merged and matched multiple datasets using **Power Query** to create a unified, analysis-ready dataset. |
 | **Output** | Produced a clean, consistent, and structured dataset to support RMA trend analysis and interactive dashboard reporting. |
+
 
 ---
 
@@ -63,6 +66,8 @@ Analyzed field quality RMA data to assess product reliability, compare manufactu
 4. Confirm source record count = **38**.
 </div>
 
+---
+
 ## 6. Dashboard & Analysis
 
 | Chart | Question | Focus |
@@ -75,3 +80,71 @@ Analyzed field quality RMA data to assess product reliability, compare manufactu
 | **Cumulative RMA Failure Rate by Manufacturing Cohort and Aging Interval** | How do failure rates evolve as products age for each manufacturing cohort? | Emphasizes which aging intervals contribute the most to cumulative failures. |
 | **Top 10 Failure Categories by Total Failures** | Which product categories contribute the most failures? | Highlights the modules or systems (e.g., Kneader, Press, Vertical Tray, Connectivity) responsible for the largest share of RMAs, helping prioritize reliability improvement efforts and engineering resources. |
 | **Top 10 Failure Modes by Total Failures** | What are the most common failure modes reported by customers? | Identifies the specific defects causing the highest number of failures, enabling targeted root cause investigations, corrective actions, and design improvements. |
+
+---
+
+## 7. Key Findings
+
+| Question | Dashboard Visual | Conclusion |
+|----------|------------------|------------|
+| **What is the overall Return Material Authorization (RMA) rate in the field?** | *Insert Field Quality RMA Rate chart here* | The reported field RMA rate stabilized at approximately **1–3%** while active units in the field (cumulative deliveries minus previous RMAs) continued to increase, indicating improved product reliability as the installed base grew. |
+| **Which manufacturing cohorts (based on production period) have the highest and lowest RMA rates?** | *Insert Manufacturing Cohort RMA Rate chart here* | Manufacturing cohort RMA rates generally decreased across newer shipment cohorts, with a temporary increase in **January 2026**. RMA rates from **March 2026 onward** may be understated due to limited Customer Support (CS) operations, which reduced RMA reporting. |
+| **When do RMAs occur most frequently by month and work week?** | *Insert Month and Work Week Distribution chart here* | RMAs occurred most frequently between **June and December 2025**, with the highest volume recorded during **Work Week 51**, indicating that failures were concentrated in the latter half of 2025. |
+| **How does the cumulative RMA rate change as each quarterly manufacturing cohort ages?** | *Insert Quarterly Cohort Cumulative RMA chart here* | The cumulative RMA rate increased as each quarterly manufacturing cohort aged, although the rate of increase gradually slowed over time, indicating that failures accumulated as products remained longer in the field. |
+| **Which manufacturing cohorts and time periods exhibit the highest cumulative RMA rates?** | *Insert Cumulative Manufacturing Cohort Heatmap here* | The **May and June 2025** manufacturing cohorts exhibited the highest cumulative RMA rates, reaching approximately **15% by July 2026**. In general, cumulative RMA rates increased with field age, with older cohorts consistently showing higher values than newer cohorts. |
+| **How do cumulative RMA rates vary across aging intervals for each manufacturing cohort?** | *Insert Aging Interval Comparison chart here* | Cumulative RMA rates increased across successive aging intervals for all manufacturing cohorts. The highest cumulative failure rates were generally observed after **9–15 months** in the field, indicating that failures continued to accumulate as products aged. |
+| **Which product categories contribute the most failures?** | *Insert Top 10 Failure Categories chart here* | The **Kicker Module** contributed the largest number of failures, followed by **Electrical** and **Kneader** issues. These categories accounted for most RMAs, making them the highest-priority areas for product reliability improvement. |
+| **What are the most common failure modes reported by customers?** | *Insert Top 10 Failure Modes chart here* | **Not Powering On** and **Kicker Drive** were the most common failure modes, significantly exceeding all others. Prioritizing improvements in these failure modes would have the greatest impact on reducing overall RMA cases. |
+
+---
+
+## Interactive Analysis
+
+### January 2026 Cohort RMA Increase
+
+**Dashboard Visual**
+
+*Insert Heatmap and Interactive Dashboard screenshots here*
+
+**Key Finding**
+
+Cross-filtering revealed that the increase in cumulative RMA rates for the **January 2026** manufacturing cohort began in **April 2026**, coinciding with a sharp increase in **Kicker Module** failures. Prior to April 2026, no Kicker Drive RMAs were recorded for this cohort, suggesting that this failure mode was the primary contributor to the observed increase in cumulative RMA rates.
+
+---
+
+### Work Week 51 RMA Spike
+
+**Dashboard Visual**
+
+*Insert Work Week Distribution chart and Interactive Dashboard screenshots here*
+
+**Key Finding**
+
+The highest RMA volume occurred during **Work Week 51**. Interactive filtering showed that **Flour Tunnel Block** was the dominant failure mode for the earliest manufacturing cohorts during this period. However, this failure mode was not consistently observed in later cohorts, suggesting that it was a **cohort-specific issue** rather than a persistent product reliability trend.
+
+---
+
+## 8. Recommendations
+
+| Recommendation | Rationale |
+|---------------|-----------|
+| **Improve failure mode data quality by ensuring all RMAs are assigned accurate failure modes instead of administrative notes.** | A growing number of administrative records reduces the accuracy of failure trend analysis and root cause identification. |
+| **Prioritize corrective actions for Kicker Module, Electrical, and Kneader-related issues.** | These categories account for the highest number of reported failures and present the greatest opportunity to reduce overall RMAs. |
+| **Investigate the emergence of Kicker Module failures in the January 2026 manufacturing cohort.** | Interactive analysis identified the Kicker Module as the primary contributor to the increase in cumulative RMA rates beginning in April 2026. |
+| **Review the root cause of Flour Tunnel Block failures in the earliest manufacturing cohorts.** | Although not consistently observed in later cohorts, this failure mode was the primary contributor to the Work Week 51 RMA spike. |
+| **Continue monitoring cumulative RMA rates by manufacturing cohort.** | Cohort analysis enables early detection of reliability issues and helps measure the effectiveness of manufacturing improvements over time. |
+| **Validate lower RMA rates from March 2026 onward against Customer Support reporting capacity.** | Reduced Customer Support (CS) operations may have resulted in underreported RMAs, affecting the interpretation of reliability trends. |
+
+---
+
+## 9. Skills Demonstrated
+
+| Skill Area | Tools / Techniques |
+|------------|--------------------|
+| **Data Cleaning** | Power Query, Excel Formulas |
+| **Data Transformation** | Power Query M, Custom Transformations, Text Extraction |
+| **Data Integration** | Merge Queries, Lookup Table Matching, Query Joins |
+| **Data Standardization** | Failure Mapping, Spelling Correction, Data Mapping |
+| **Data Validation** | Source-to-Dashboard Reconciliation, Pivot Table Validation, Cross-Check of Calculated Metrics, Dashboard Consistency Verification |
+| **Data Analysis** | Failure Frequency Analysis, Top N Analysis, RMA Rate Analysis, Manufacturing Cohort Analysis, Aging Failure Analysis, Cumulative Failure Rate Analysis, Monthly Trend Analysis, Product Lifecycle Analysis, Comparative Performance Analysis, Interactive Analysis |
+| **Data Visualization** | Interactive Dashboard, Pivot Charts, Combination Charts, Heatmaps, Slicers, Conditional Formatting |
