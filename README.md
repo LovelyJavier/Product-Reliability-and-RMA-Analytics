@@ -18,7 +18,7 @@ Analyzed field quality RMA data to assess product reliability, compare manufactu
 
 ---
 
-## 3. Business Questions
+## 3. Questions
 
 <div align="left">
   
